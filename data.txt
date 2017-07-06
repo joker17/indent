@@ -1,0 +1,6 @@
+  [遍历开始][object(idx)][
+date = @date,  id = @id, 
+]
+{
+  [删除][object]
+  }
