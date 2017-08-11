@@ -2,5 +2,6 @@
 date = @date,  id = @id, 
 ]
 {
+  //test
   [删除][object]
   }
