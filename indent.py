@@ -41,7 +41,8 @@ class Stack:
       self.push([char, num])
       return -1
     
-file = open("data.txt", 'r', encoding='UTF-8')
+#file = open("data.txt", 'r', encoding='UTF-8')
+file = open("data.txt", 'r')
 lines = file.readlines()
 
 i = 0
