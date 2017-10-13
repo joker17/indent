@@ -42,13 +42,13 @@ class Stack:
       return -1
 
 def proc_indent(lines):
-    i = 0
-    #list ts_list
-    ts_list = list()
-    symbol_stack = Stack()
+  i = 0
+  #list ts_list
+  ts_list = list()
+  symbol_stack = Stack()
 
     for line in lines:
-        print("==%s", line)
+        #print("==%s", line)
         ts_list.append(0)
         j = 0
         for word in line:
@@ -78,7 +78,7 @@ def proc_indent(lines):
             alltext = "%s\n" % (newline)
         else:
             alltext = "%s%s\n" % (alltext, newline)
-        print(newline)
+        #print(newline)
         n += 1
     return alltext
     
