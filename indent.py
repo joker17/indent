@@ -41,9 +41,10 @@ class Stack:
       self.push([char, num])
       return -1
 
-def proc_indent(lines):
+def proc_indent(lines, tabsize = 4):
   i = 0
   #list ts_list
+  #ts_list第几行要用几个缩进
   ts_list = list()
   symbol_stack = Stack()
 
@@ -57,7 +58,7 @@ def proc_indent(lines):
               #print("return match_line", match_line, i)
               if match_line == -1:
                   continue
-              for k in range(match_line+1, i):
+              for k in range(match_line+1, i+1):
                   #print("add to ts_list", k)
                   ts_list[k] += 1
           j += 1
